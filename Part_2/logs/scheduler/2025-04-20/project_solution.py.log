@@ -1,0 +1,18 @@
+[2025-04-20T23:59:14.246+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/project_solution.py
+[2025-04-20T23:59:14.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_solution.py for tasks to queue
+[2025-04-20T23:59:14.249+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:14.249+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_solution.py
+[2025-04-20T23:59:14.278+0000] {processor.py:840} INFO - DAG(s) 'final_project_BBDL' retrieved from /opt/airflow/dags/project_solution.py
+[2025-04-20T23:59:14.779+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:14.778+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:final_project_BBDL
+[2025-04-20T23:59:14.889+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:14.889+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:final_project_BBDL
+[2025-04-20T23:59:14.976+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:14.975+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:final_project_BBDL
+[2025-04-20T23:59:14.976+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:14.976+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-20T23:59:14.996+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:14.996+0000] {dag.py:3118} INFO - Creating ORM DAG for final_project_BBDL
+[2025-04-20T23:59:14.997+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:14.997+0000] {dag.py:3954} INFO - Setting next_dagrun for final_project_BBDL to None, run_after=None
+[2025-04-20T23:59:15.089+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_solution.py took 0.858 seconds
+[2025-04-20T23:59:45.479+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/project_solution.py
+[2025-04-20T23:59:45.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/project_solution.py for tasks to queue
+[2025-04-20T23:59:45.489+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:45.488+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/project_solution.py
+[2025-04-20T23:59:45.525+0000] {processor.py:840} INFO - DAG(s) 'final_project_BBDL' retrieved from /opt/airflow/dags/project_solution.py
+[2025-04-20T23:59:45.672+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:45.668+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-04-20T23:59:45.693+0000] {logging_mixin.py:188} INFO - [2025-04-20T23:59:45.692+0000] {dag.py:3954} INFO - Setting next_dagrun for final_project_BBDL to None, run_after=None
+[2025-04-20T23:59:45.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/project_solution.py took 0.389 seconds

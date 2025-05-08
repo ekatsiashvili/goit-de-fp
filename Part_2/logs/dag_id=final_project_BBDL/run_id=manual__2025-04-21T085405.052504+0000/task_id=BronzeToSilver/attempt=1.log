@@ -1,0 +1,49 @@
+[2025-04-21T08:54:38.067+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-21T08:54:38.195+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: final_project_BBDL.BronzeToSilver manual__2025-04-21T08:54:05.052504+00:00 [queued]>
+[2025-04-21T08:54:38.229+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: final_project_BBDL.BronzeToSilver manual__2025-04-21T08:54:05.052504+00:00 [queued]>
+[2025-04-21T08:54:38.230+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-04-21T08:54:38.395+0000] {taskinstance.py:2330} INFO - Executing <Task(SparkSubmitOperator): BronzeToSilver> on 2025-04-21 08:54:05.052504+00:00
+[2025-04-21T08:54:38.407+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'final_project_BBDL', 'BronzeToSilver', 'manual__2025-04-21T08:54:05.052504+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/project_solution.py', '--cfg-path', '/tmp/tmpwagqi84_']
+[2025-04-21T08:54:38.408+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=640) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-21T08:54:38.409+0000] {standard_task_runner.py:91} INFO - Job 12: Subtask BronzeToSilver
+[2025-04-21T08:54:38.409+0000] {standard_task_runner.py:63} INFO - Started process 641 to run task
+[2025-04-21T08:54:38.576+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-04-21T08:54:38.760+0000] {task_command.py:426} INFO - Running <TaskInstance: final_project_BBDL.BronzeToSilver manual__2025-04-21T08:54:05.052504+00:00 [running]> on host e5b516e25ae0
+[2025-04-21T08:54:39.276+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='final_project_BBDL' AIRFLOW_CTX_TASK_ID='BronzeToSilver' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T08:54:05.052504+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-21T08:54:05.052504+00:00'
+[2025-04-21T08:54:39.277+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-21T08:54:39.360+0000] {spark_submit.py:305} INFO - Could not load connection string spark-default, defaulting to yarn
+[2025-04-21T08:54:39.365+0000] {spark_submit.py:474} INFO - Spark-Submit cmd: spark-submit --master yarn --conf spark.master=local[*] --name arrow-spark --verbose /opt/airflow/dags/bronze_to_silver.py
+[2025-04-21T08:54:42.255+0000] {spark_submit.py:644} INFO - Using properties file: null
+[2025-04-21T08:54:42.398+0000] {spark_submit.py:644} INFO - Exception in thread "main" org.apache.spark.SparkException: When running with master 'yarn' either HADOOP_CONF_DIR or YARN_CONF_DIR must be set in the environment.
+[2025-04-21T08:54:42.398+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmitArguments.error(SparkSubmitArguments.scala:650)
+[2025-04-21T08:54:42.398+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateSubmitArguments(SparkSubmitArguments.scala:281)
+[2025-04-21T08:54:42.398+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateArguments(SparkSubmitArguments.scala:237)
+[2025-04-21T08:54:42.398+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmitArguments.<init>(SparkSubmitArguments.scala:122)
+[2025-04-21T08:54:42.399+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2$$anon$3.<init>(SparkSubmit.scala:1103)
+[2025-04-21T08:54:42.399+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.parseArguments(SparkSubmit.scala:1103)
+[2025-04-21T08:54:42.399+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:86)
+[2025-04-21T08:54:42.399+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+[2025-04-21T08:54:42.399+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+[2025-04-21T08:54:42.400+0000] {spark_submit.py:644} INFO - at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2025-04-21T08:54:42.427+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-21T08:54:42.525+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 197, in execute
+    self._hook.submit(self.application)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 566, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master yarn --conf spark.master=local[*] --name arrow-spark --verbose /opt/airflow/dags/bronze_to_silver.py. Error code is: 1.
+[2025-04-21T08:54:42.535+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=final_project_BBDL, task_id=BronzeToSilver, run_id=manual__2025-04-21T08:54:05.052504+00:00, execution_date=20250421T085405, start_date=20250421T085438, end_date=20250421T085442
+[2025-04-21T08:54:42.599+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 12 for task BronzeToSilver (Cannot execute: spark-submit --master yarn --conf spark.master=local[*] --name arrow-spark --verbose /opt/airflow/dags/bronze_to_silver.py. Error code is: 1.; 641)
+[2025-04-21T08:54:42.636+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-04-21T08:54:42.787+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-21T08:54:42.900+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

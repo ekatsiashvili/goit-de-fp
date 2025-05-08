@@ -1,0 +1,45 @@
+[2025-04-21T08:58:47.645+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-21T08:58:47.774+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: final_project_BBDL.SilverToGold manual__2025-04-21T08:57:20.228002+00:00 [queued]>
+[2025-04-21T08:58:47.787+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: final_project_BBDL.SilverToGold manual__2025-04-21T08:57:20.228002+00:00 [queued]>
+[2025-04-21T08:58:47.788+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-04-21T08:58:47.895+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): SilverToGold> on 2025-04-21 08:57:20.228002+00:00
+[2025-04-21T08:58:47.907+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1573) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-21T08:58:47.908+0000] {standard_task_runner.py:63} INFO - Started process 1574 to run task
+[2025-04-21T08:58:47.907+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'final_project_BBDL', 'SilverToGold', 'manual__2025-04-21T08:57:20.228002+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/project_solution.py', '--cfg-path', '/tmp/tmp5j9dfwpw']
+[2025-04-21T08:58:47.913+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask SilverToGold
+[2025-04-21T08:58:48.073+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-04-21T08:58:48.284+0000] {task_command.py:426} INFO - Running <TaskInstance: final_project_BBDL.SilverToGold manual__2025-04-21T08:57:20.228002+00:00 [running]> on host e5b516e25ae0
+[2025-04-21T08:58:48.726+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='final_project_BBDL' AIRFLOW_CTX_TASK_ID='SilverToGold' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T08:57:20.228002+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-21T08:57:20.228002+00:00'
+[2025-04-21T08:58:48.727+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-21T08:59:13.510+0000] {logging_mixin.py:188} INFO - +---------------+------+------+-----------+-----------------+------------------+--------------------+
+|          sport| medal|   sex|country_noc|       avg_weight|        avg_height|           timestamp|
++---------------+------+------+-----------+-----------------+------------------+--------------------+
+|           Luge|Silver|Female|        GDR|             72.4|             172.4|2025-04-21 08:59:...|
+|   CyclingTrack|  Gold|  Male|        FRA|77.42105263157895| 180.1578947368421|2025-04-21 08:59:...|
+|  CanoeMarathon|Bronze|  Male|        TCH|             NULL|              NULL|2025-04-21 08:59:...|
+|           Judo|Silver|Female|        JPN|          12569.0|             160.6|2025-04-21 08:59:...|
+|        Curling|Silver|  Male|        NOR|             87.6|             185.8|2025-04-21 08:59:...|
+|        Archery|Silver|  Male|        FRA|             83.0|             180.0|2025-04-21 08:59:...|
+|    CanoeSprint|  Gold|  Male|        NZL|             84.3|             178.9|2025-04-21 08:59:...|
+|      Badminton|Silver|  Male|        INA|70.66666666666667|174.16666666666666|2025-04-21 08:59:...|
+|        Sailing|Silver|  Male|        GDR|82.83333333333333|178.66666666666666|2025-04-21 08:59:...|
+|       Shooting|Silver|  Male|        FRA|             75.8|             179.6|2025-04-21 08:59:...|
+|FreestyleSkiing|Bronze|Female|        NOR|             62.0|             169.0|2025-04-21 08:59:...|
+|      Athletics|Bronze|  Male|        SUI|            128.0|             200.0|2025-04-21 08:59:...|
+|    CanoeSprint|  NULL|  Male|        GBR|79.15044247787611|181.26548672566372|2025-04-21 08:59:...|
+|      Athletics|  NULL|  Male|        MON|             86.8|             182.4|2025-04-21 08:59:...|
+|    CanoeSprint|  NULL|  Male|        UZB|83.36666666666666|184.13333333333333|2025-04-21 08:59:...|
+|     Basketball|  NULL|  Male|        PHI|76.21621621621621| 181.2972972972973|2025-04-21 08:59:...|
+|        Archery|  NULL|Female|        SWE|61.83870967741935|169.03225806451613|2025-04-21 08:59:...|
+|      Athletics|  NULL|Female|        KGZ|58.04761904761905|             173.0|2025-04-21 08:59:...|
+|           Luge|  NULL|  Male|        UKR|9727.575757575758|183.06060606060606|2025-04-21 08:59:...|
+|       Swimming|  NULL|  Male|        JOR|72.42857142857143|177.14285714285714|2025-04-21 08:59:...|
++---------------+------+------+-----------+-----------------+------------------+--------------------+
+only showing top 20 rows
+[2025-04-21T08:59:13.515+0000] {logging_mixin.py:188} INFO - Дані збережено в: gold/avg_stats
+[2025-04-21T08:59:13.925+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-04-21T08:59:13.926+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-21T08:59:14.009+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=final_project_BBDL, task_id=SilverToGold, run_id=manual__2025-04-21T08:57:20.228002+00:00, execution_date=20250421T085720, start_date=20250421T085847, end_date=20250421T085914
+[2025-04-21T08:59:14.125+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-21T08:59:14.239+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-21T08:59:14.241+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

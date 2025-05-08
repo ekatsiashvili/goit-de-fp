@@ -1,0 +1,70 @@
+[2025-04-21T08:57:52.537+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-04-21T08:57:52.662+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: final_project_BBDL.BronzeToSilver manual__2025-04-21T08:57:20.228002+00:00 [queued]>
+[2025-04-21T08:57:52.683+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: final_project_BBDL.BronzeToSilver manual__2025-04-21T08:57:20.228002+00:00 [queued]>
+[2025-04-21T08:57:52.683+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-04-21T08:57:52.783+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): BronzeToSilver> on 2025-04-21 08:57:20.228002+00:00
+[2025-04-21T08:57:52.797+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1080) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-21T08:57:52.802+0000] {standard_task_runner.py:63} INFO - Started process 1086 to run task
+[2025-04-21T08:57:52.803+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'final_project_BBDL', 'BronzeToSilver', 'manual__2025-04-21T08:57:20.228002+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/project_solution.py', '--cfg-path', '/tmp/tmp3uowog8n']
+[2025-04-21T08:57:52.805+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask BronzeToSilver
+[2025-04-21T08:57:53.014+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-04-21T08:57:53.268+0000] {task_command.py:426} INFO - Running <TaskInstance: final_project_BBDL.BronzeToSilver manual__2025-04-21T08:57:20.228002+00:00 [running]> on host e5b516e25ae0
+[2025-04-21T08:57:53.794+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='final_project_BBDL' AIRFLOW_CTX_TASK_ID='BronzeToSilver' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T08:57:20.228002+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-21T08:57:20.228002+00:00'
+[2025-04-21T08:57:53.795+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-04-21T08:58:29.798+0000] {logging_mixin.py:188} INFO - +----------+--------------------+------+---------------+------+------+-----------------+-----------+--------------------+--------------------+
+|athlete_id|                name|   sex|           born|height|weight|          country|country_noc|         description|       special_notes|
++----------+--------------------+------+---------------+------+------+-----------------+-----------+--------------------+--------------------+
+|    900115|        WilliamBurns|  Male| 27February1878|  NULL|  NULL|           Canada|        CAN|WilliamBurnswasbo...|ListedinOlympians...|
+|     78121|       ArthurC.Blake|  Male|  26January1872|  NULL|  NULL|     UnitedStates|        USA|IndirectlyArthurB...|                NULL|
+|     88936|        AminataDiouf|Female| 18February1977|   172|    60|          Senegal|        SEN|PersonalBests1001...|                NULL|
+|     77021|          RuhiSaralp|  Male| 15December1924|   180|    64|           Trkiye|        TUR|PersonalBests100u...|ListedinOlympians...|
+|    132411|          KlausLange|  Male|  13January1995|   182|    81|        Argentina|        ARG|                NULL|SonofSantiagoLang...|
+|    146413|         YanahGerber|Female|    16March2001|  NULL|  NULL|      SouthAfrica|        RSA|                NULL|                NULL|
+|     74478|        MaxBerendson|  Male|      18May1917|  NULL|  NULL|             Peru|        PER|PersonalBestLJ6.8...|                NULL|
+|    106597|           LeeJaeHun|  Male| 28November1976|   185|    68|  RepublicofKorea|        KOR|PersonalBest80014...|                NULL|
+|    147724|AlysiaLefauFakaos...|Female|  5November2000|   170|    74|        Australia|        AUS|                NULL|                NULL|
+|     57648|      RobertoLimonta|  Male|   6January1962|   179|    95|             Cuba|        CUB|RobertoLimontahad...|ListedinOlympians...|
+|    900903|    FernandoBendinha|  Male| 1September1966|  NULL|  NULL|           Angola|        ANG|                NULL|                NULL|
+|     61370|       FritzBischoff|  Male|  6December1905|  NULL|  NULL|          Germany|        GER|FritzBischoff,bro...|BrotherofPeterBis...|
+|     23286|   DmitryKnyazhevich|  Male|     21June1874|  NULL|  NULL|RussianFederation|        RUS|                NULL|ListedinOlympians...|
+|    116490|          RickPowell|  Male|    22March1989|   183|    73|     UnitedStates|        USA|                NULL|                NULL|
+|     44303|         CarlWollert|  Male|    11March1877|  NULL|  NULL|           Sweden|        SWE|                NULL|                NULL|
+|     31340|      RobertHerrmann|  Male| 11December1869|  NULL|  NULL|     UnitedStates|        USA|RobertHerrmanncom...|                NULL|
+|     37214|       PeterBeaumont|  Male|   2January1965|   193|    87|     GreatBritain|        GBR|                NULL|FatherofJackBeaumont|
+|     55614|       MaunoLindroos|  Male|    10March1941|   179|110115|          Finland|        FIN|MaunoLindroosseto...|                NULL|
+|    900528|       HansAntonlien|  Male|21September1958|  NULL|  NULL|           Norway|        NOR|                NULL|                NULL|
+|     16512|         PaulSchulze|  Male|  22October1882|  NULL|  NULL|          Germany|        GER|CyclistPaulSchulz...|                NULL|
++----------+--------------------+------+---------------+------+------+-----------------+-----------+--------------------+--------------------+
+only showing top 20 rows
+[2025-04-21T08:58:29.798+0000] {logging_mixin.py:188} INFO - Оброблені дані збережено для таблиці athlete_bio: silver/athlete_bio
+[2025-04-21T08:58:45.563+0000] {logging_mixin.py:188} INFO - +------------------+----------+-----------+------------------+--------------------+---------+-------------------+----------+-------+------+-----------+
+|           edition|edition_id|country_noc|             sport|               event|result_id|            athlete|athlete_id|    pos| medal|isTeamSport|
++------------------+----------+-----------+------------------+--------------------+---------+-------------------+----------+-------+------+-----------+
+|2008SummerOlympics|        53|        POR|              Judo| HalfLightweight,Men|   260247|          PedroDias|    112775|      9|  NULL|      False|
+|2000SummerOlympics|        25|        NZL|      CyclingTrack|          Keirin,Men|   154983|       AnthonyPeden|     90468| 3h2r24|  NULL|      False|
+|2010WinterOlympics|        57|        BLR|      AlpineSkiing|        Slalom,Women|   924558|     MaryiaShkanava|    118424|     38|  NULL|      False|
+|1952SummerOlympics|        13|        IRL|            Boxing|LightWelterweight...|    22596|      TerryMilligan|      4003|      5|  NULL|      False|
+|1924SummerOlympics|         8|        FRA|            Rowing|          Eights,Men|   157710|            J.Btout|     36868|ACh1r13|  NULL|       True|
+|1952SummerOlympics|        13|        BUL|ArtisticGymnastics|      HorseVault,Men|    70166|      MinchoTodorov|     29518|     54|  NULL|      False|
+|1988WinterOlympics|        43|        FRA|        SkiJumping|NormalHill,Indivi...|     2412|       FrdricBerger|     84034|     49|  NULL|      False|
+|1912SummerOlympics|         6|        HUN|         Athletics|     1,500metres,Men|    56624|          JnosAntal|    100779|    DNS|  NULL|      False|
+|1968WinterOlympics|        38|        SUI|      AlpineSkiing|        Downhill,Men|     1238|  JeanDanielDtwyler|     85381|      3|Bronze|      False|
+|1996SummerOlympics|        24|        ITA|            Rowing|          Eights,Men|   159427|   CarmineAbbagnale|     38265|      9|  NULL|       True|
+|2004SummerOlympics|        26|        MEX|          Swimming|4200metresFreesty...|     8912|          JoshIlika|     93645|     15|  NULL|       True|
+|2000SummerOlympics|        25|        AUS|         Taekwondo| Featherweight,Women|    28145|     CynthiaCameron|     94072|     10|  NULL|      False|
+|1928SummerOlympics|         9|        GER|  ModernPentathlon|      Individual,Men|    50027|         HelmutKahl|     34820|      3|Bronze|      False|
+|1960SummerOlympics|        15|        IRL|            Boxing|   Featherweight,Men|    23053|          AndoReddy|      4015|      9|  NULL|      False|
+|2014WinterOlympics|        58|        ROU|CrossCountrySkiing|  10kilometres,Women|   350087|          TimeaSara|    128293|     59|  NULL|      False|
+|1992SummerOlympics|        23|        GEQ|         Athletics|       200metres,Men|    63973|  JuanVicenteMatala|     69934|ACh8r14|  NULL|      False|
+|1964SummerOlympics|        16|        URS|            Rowing|          Eights,Men|   158458|        ZigmasJukna|     40271|      5|  NULL|       True|
+|2020SummerOlympics|        61|        BLR|          Shooting|AirRifle,10metres...| 18000728|YuryShcherbatsevich|    104859|     15|  NULL|      False|
+|1908SummerOlympics|         5|        SWE|          Swimming|400metresFreestyl...|     4494|   GunnarWennerstrm|     50490|    DNS|  NULL|      False|
+|2004SummerOlympics|        26|        CHN|         Athletics|        Marathon,Men|    66095|          LiZhuhong|    108243|     31|  NULL|      False|
++------------------+----------+-----------+------------------+--------------------+---------+-------------------+----------+-------+------+-----------+
+only showing top 20 rows
+[2025-04-21T08:58:45.563+0000] {logging_mixin.py:188} INFO - Оброблені дані збережено для таблиці athlete_event_results: silver/athlete_event_results
+[2025-04-21T08:58:46.455+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-04-21T08:58:46.456+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-04-21T08:58:46.545+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=final_project_BBDL, task_id=BronzeToSilver, run_id=manual__2025-04-21T08:57:20.228002+00:00, execution_date=20250421T085720, start_date=20250421T085752, end_date=20250421T085846
+[2025-04-21T08:58:46.650+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-04-21T08:58:46.746+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
